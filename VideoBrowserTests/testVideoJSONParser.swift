@@ -15,6 +15,7 @@ class testVideoJSONParser: XCTestCase {
         
         let testJSON = "{\"_links\": [{\"title\": \"honeyball\"}]}".data(using: .utf8)!
         let videoJSONParser = VideoJSONParser(from: testJSON)!
+        XCTAssertEqual("honeyball", videoJSONParser.links.first?["title"] as! String)
 
         
     

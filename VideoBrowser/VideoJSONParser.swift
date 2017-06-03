@@ -9,7 +9,7 @@
 import Foundation
 
 struct VideoJSONParser {
-    var links: [String: String] = [String: String]()
+    var links: [[String: Any]] = [[String: Any]]()
 
     init? (from data: Data) {
         
@@ -18,7 +18,7 @@ struct VideoJSONParser {
         if let linksDictionary = json as? [String: Any] {
             if let videosDictionaryArray = linksDictionary["_links"] as? [Any] {
                 for video in videosDictionaryArray {
-                    print (video)
+                    links.append(video as! [String: Any])
                 }
             }
         } else {
