@@ -12,7 +12,8 @@
 		0DAE270B1EE30BAC004EE306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE27091EE30BAC004EE306 /* Main.storyboard */; };
 		0DAE270D1EE30BAC004EE306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270C1EE30BAC004EE306 /* Assets.xcassets */; };
 		0DAE27101EE30BAC004EE306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */; };
-		0DAE271B1EE30BAC004EE306 /* VideoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE271A1EE30BAC004EE306 /* VideoBrowserTests.swift */; };
+		0DAE271B1EE30BAC004EE306 /* testJSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE271A1EE30BAC004EE306 /* testJSONFeed.swift */; };
+		0DAE27261EE3109A004EE306 /* videoJSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE27251EE3109A004EE306 /* videoJSONFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,9 @@
 		0DAE270F1EE30BAC004EE306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DAE27111EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DAE27161EE30BAC004EE306 /* VideoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DAE271A1EE30BAC004EE306 /* VideoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoBrowserTests.swift; sourceTree = "<group>"; };
+		0DAE271A1EE30BAC004EE306 /* testJSONFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testJSONFeed.swift; sourceTree = "<group>"; };
 		0DAE271C1EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAE27251EE3109A004EE306 /* videoJSONFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoJSONFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				0DAE270C1EE30BAC004EE306 /* Assets.xcassets */,
 				0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */,
 				0DAE27111EE30BAC004EE306 /* Info.plist */,
+				0DAE27251EE3109A004EE306 /* videoJSONFeed.swift */,
 			);
 			path = VideoBrowser;
 			sourceTree = "<group>";
@@ -90,7 +93,7 @@
 		0DAE27191EE30BAC004EE306 /* VideoBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DAE271A1EE30BAC004EE306 /* VideoBrowserTests.swift */,
+				0DAE271A1EE30BAC004EE306 /* testJSONFeed.swift */,
 				0DAE271C1EE30BAC004EE306 /* Info.plist */,
 			);
 			path = VideoBrowserTests;
@@ -202,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAE27081EE30BAC004EE306 /* ViewController.swift in Sources */,
+				0DAE27261EE3109A004EE306 /* videoJSONFeed.swift in Sources */,
 				0DAE27061EE30BAC004EE306 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DAE271B1EE30BAC004EE306 /* VideoBrowserTests.swift in Sources */,
+				0DAE271B1EE30BAC004EE306 /* testJSONFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
