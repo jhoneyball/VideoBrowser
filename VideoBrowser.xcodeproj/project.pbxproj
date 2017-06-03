@@ -12,8 +12,9 @@
 		0DAE270B1EE30BAC004EE306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE27091EE30BAC004EE306 /* Main.storyboard */; };
 		0DAE270D1EE30BAC004EE306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270C1EE30BAC004EE306 /* Assets.xcassets */; };
 		0DAE27101EE30BAC004EE306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */; };
-		0DAE271B1EE30BAC004EE306 /* testJSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE271A1EE30BAC004EE306 /* testJSONFeed.swift */; };
 		0DAE27261EE3109A004EE306 /* videoJSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE27251EE3109A004EE306 /* videoJSONFeed.swift */; };
+		0DAE27281EE312EA004EE306 /* testVideoJSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE27271EE312EA004EE306 /* testVideoJSONFeed.swift */; };
+		0DAE272A1EE318A2004EE306 /* Feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE27291EE318A2004EE306 /* Feed.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +36,10 @@
 		0DAE270F1EE30BAC004EE306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DAE27111EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DAE27161EE30BAC004EE306 /* VideoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DAE271A1EE30BAC004EE306 /* testJSONFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testJSONFeed.swift; sourceTree = "<group>"; };
 		0DAE271C1EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DAE27251EE3109A004EE306 /* videoJSONFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videoJSONFeed.swift; sourceTree = "<group>"; };
+		0DAE27271EE312EA004EE306 /* testVideoJSONFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testVideoJSONFeed.swift; sourceTree = "<group>"; };
+		0DAE27291EE318A2004EE306 /* Feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Feed.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */,
 				0DAE27111EE30BAC004EE306 /* Info.plist */,
 				0DAE27251EE3109A004EE306 /* videoJSONFeed.swift */,
+				0DAE27291EE318A2004EE306 /* Feed.json */,
 			);
 			path = VideoBrowser;
 			sourceTree = "<group>";
@@ -93,8 +96,8 @@
 		0DAE27191EE30BAC004EE306 /* VideoBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				0DAE271A1EE30BAC004EE306 /* testJSONFeed.swift */,
 				0DAE271C1EE30BAC004EE306 /* Info.plist */,
+				0DAE27271EE312EA004EE306 /* testVideoJSONFeed.swift */,
 			);
 			path = VideoBrowserTests;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 					0DAE27151EE30BAC004EE306 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = EF4UQ57PCN;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0DAE27011EE30BAC004EE306;
 					};
@@ -185,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAE27101EE30BAC004EE306 /* LaunchScreen.storyboard in Resources */,
+				0DAE272A1EE318A2004EE306 /* Feed.json in Resources */,
 				0DAE270D1EE30BAC004EE306 /* Assets.xcassets in Resources */,
 				0DAE270B1EE30BAC004EE306 /* Main.storyboard in Resources */,
 			);
@@ -214,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DAE271B1EE30BAC004EE306 /* testJSONFeed.swift in Sources */,
+				0DAE27281EE312EA004EE306 /* testVideoJSONFeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,11 +379,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EF4UQ57PCN;
 				INFOPLIST_FILE = VideoBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honeyball.VideoBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoBrowser.app/VideoBrowser";
 			};
@@ -389,6 +396,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = EF4UQ57PCN;
 				INFOPLIST_FILE = VideoBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

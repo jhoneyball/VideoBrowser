@@ -10,11 +10,19 @@ import Foundation
 
 struct VideoJSONFeed {
     
-    let theJSON: String
+    var theJSON: String?
     
     
     init() {
-        theJSON = "Hello"
+        if let filepath = Bundle.main.path(forResource: "Feed", ofType: "json") {
+            do {
+                let theJSON = try String(contentsOfFile: filepath)
+                print(theJSON)
+            } catch {
+                // contents could not be loaded
+            }
+        } else {
+            // example.txt not found!
+        }
     }
-    
 }
