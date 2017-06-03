@@ -13,9 +13,9 @@ class testVideoJSONParser: XCTestCase {
     
     func testLinks() {
         
-        let testJSON = "{\"_links\":[{\"title\":\"Reading\"}]}".data(using: .utf8)!
+        let testJSON = "{\"_links\": [{\"title\": \"honeyball\"}]}".data(using: .utf8)!
         let videoJSONParser = VideoJSONParser(from: testJSON)!
-        print(videoJSONParser.links)
+
         
     
     }

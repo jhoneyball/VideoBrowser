@@ -15,8 +15,12 @@ struct VideoJSONParser {
         
         let json = try? JSONSerialization.jsonObject(with: data, options: [])
         
-        if let dictionary = json as? [String: String] {
-            links = dictionary
+        if let linksDictionary = json as? [String: Any] {
+            if let videosDictionaryArray = linksDictionary["_links"] as? [Any] {
+                for video in videosDictionaryArray {
+                    print (video)
+                }
+            }
         } else {
             return nil
         }
