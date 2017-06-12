@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import MatchList
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let navigationController = window?.rootViewController as! UINavigationController
+        let matchListTableViewController = navigationController.viewControllers[0] as! MatchListTableViewController
+
+        
+        let matchList = MatchList(from: .file, with: "Feed.json")!
+        var matchListTableModel = MatchListTableModel()
+        matchListTableModel.addItems(matchList)
+        
+        
+        matchListTableViewController.matchListTableModel = matchListTableModel
+
+
         return true
     }
 

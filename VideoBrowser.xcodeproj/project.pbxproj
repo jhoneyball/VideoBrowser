@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1CC5A21EEDB72900907386 /* MatchListTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1CC5A11EEDB72900907386 /* MatchListTableModel.swift */; };
+		0D1CC5A41EEDBA9B00907386 /* MatchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1CC5A31EEDBA9B00907386 /* MatchDetailViewModel.swift */; };
+		0D1CC6271EEF478800907386 /* MatchList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1CC6261EEF478800907386 /* MatchList.framework */; };
+		0D1CC6281EEF478800907386 /* MatchList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1CC6261EEF478800907386 /* MatchList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0D1CC62B1EEF4D8000907386 /* Feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D1CC62A1EEF4D8000907386 /* Feed.json */; };
+		0D1CC62C1EEF57EE00907386 /* DummyMatchListTableModelCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1CC5A71EEDBD3600907386 /* DummyMatchListTableModelCreator.swift */; };
+		0D1CC6311EEF588300907386 /* MatchListTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1CC5A11EEDB72900907386 /* MatchListTableModel.swift */; };
+		0D1CC6321EEF588600907386 /* MatchDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1CC5A31EEDBA9B00907386 /* MatchDetailViewModel.swift */; };
+		0D6CCB5E1EE481E90020D145 /* MatchListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6CCB5D1EE481E90020D145 /* MatchListTableViewController.swift */; };
+		0D9F2A5C1EEC7D7400776BAE /* VideoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F2A5B1EEC7D7400776BAE /* VideoItemCell.swift */; };
+		0D9F2A611EED827B00776BAE /* MatchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9F2A601EED827B00776BAE /* MatchDetailsViewController.swift */; };
 		0DAE27061EE30BAC004EE306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE27051EE30BAC004EE306 /* AppDelegate.swift */; };
-		0DAE27081EE30BAC004EE306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE27071EE30BAC004EE306 /* ViewController.swift */; };
 		0DAE270B1EE30BAC004EE306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE27091EE30BAC004EE306 /* Main.storyboard */; };
 		0DAE270D1EE30BAC004EE306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270C1EE30BAC004EE306 /* Assets.xcassets */; };
 		0DAE27101EE30BAC004EE306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */; };
-		0DAE27261EE3109A004EE306 /* VideoJSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE27251EE3109A004EE306 /* VideoJSONFeed.swift */; };
-		0DAE27281EE312EA004EE306 /* testVideoJSONFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAE27271EE312EA004EE306 /* testVideoJSONFeed.swift */; };
-		0DAE272A1EE318A2004EE306 /* Feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE27291EE318A2004EE306 /* Feed.json */; };
-		0DE75D861EE32EFF00454E56 /* testVideoJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE75D851EE32EFF00454E56 /* testVideoJSONParser.swift */; };
-		0DE75D881EE32F7F00454E56 /* VideoJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE75D871EE32F7F00454E56 /* VideoJSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,21 +34,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0D1CC6291EEF478800907386 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0D1CC6281EEF478800907386 /* MatchList.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D1CC5A11EEDB72900907386 /* MatchListTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchListTableModel.swift; sourceTree = "<group>"; };
+		0D1CC5A31EEDBA9B00907386 /* MatchDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailViewModel.swift; sourceTree = "<group>"; };
+		0D1CC5A71EEDBD3600907386 /* DummyMatchListTableModelCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DummyMatchListTableModelCreator.swift; path = ../VideoBrowser/DummyMatchListTableModelCreator.swift; sourceTree = "<group>"; };
+		0D1CC6261EEF478800907386 /* MatchList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MatchList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D1CC62A1EEF4D8000907386 /* Feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Feed.json; sourceTree = "<group>"; };
+		0D6CCB5D1EE481E90020D145 /* MatchListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchListTableViewController.swift; sourceTree = "<group>"; };
+		0D9F2A5B1EEC7D7400776BAE /* VideoItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoItemCell.swift; sourceTree = "<group>"; };
+		0D9F2A601EED827B00776BAE /* MatchDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchDetailsViewController.swift; sourceTree = "<group>"; };
 		0DAE27021EE30BAC004EE306 /* VideoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAE27051EE30BAC004EE306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DAE27071EE30BAC004EE306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0DAE270A1EE30BAC004EE306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DAE270C1EE30BAC004EE306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DAE270F1EE30BAC004EE306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DAE27111EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DAE27161EE30BAC004EE306 /* VideoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAE271C1EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DAE27251EE3109A004EE306 /* VideoJSONFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoJSONFeed.swift; sourceTree = "<group>"; };
-		0DAE27271EE312EA004EE306 /* testVideoJSONFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testVideoJSONFeed.swift; sourceTree = "<group>"; };
-		0DAE27291EE318A2004EE306 /* Feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Feed.json; sourceTree = "<group>"; };
-		0DE75D851EE32EFF00454E56 /* testVideoJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testVideoJSONParser.swift; sourceTree = "<group>"; };
-		0DE75D871EE32F7F00454E56 /* VideoJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoJSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D1CC6271EEF478800907386 /* MatchList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +86,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D1CC59E1EEDB3F400907386 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D9F2A601EED827B00776BAE /* MatchDetailsViewController.swift */,
+				0D6CCB5D1EE481E90020D145 /* MatchListTableViewController.swift */,
+				0D9F2A5B1EEC7D7400776BAE /* VideoItemCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D1CC59F1EEDB57C00907386 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D1CC5A11EEDB72900907386 /* MatchListTableModel.swift */,
+				0D1CC5A31EEDBA9B00907386 /* MatchDetailViewModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0D1CC5A01EEDB58900907386 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DAE27091EE30BAC004EE306 /* Main.storyboard */,
+				0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		0DAE26F91EE30BAC004EE306 = {
 			isa = PBXGroup;
 			children = (
 				0DAE27041EE30BAC004EE306 /* VideoBrowser */,
 				0DAE27191EE30BAC004EE306 /* VideoBrowserTests */,
 				0DAE27031EE30BAC004EE306 /* Products */,
+				0D1CC6261EEF478800907386 /* MatchList.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,15 +136,13 @@
 		0DAE27041EE30BAC004EE306 /* VideoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				0D1CC5A01EEDB58900907386 /* View */,
+				0D1CC59F1EEDB57C00907386 /* Model */,
+				0D1CC59E1EEDB3F400907386 /* ViewControllers */,
 				0DAE27051EE30BAC004EE306 /* AppDelegate.swift */,
-				0DAE27071EE30BAC004EE306 /* ViewController.swift */,
-				0DAE27091EE30BAC004EE306 /* Main.storyboard */,
+				0D1CC62A1EEF4D8000907386 /* Feed.json */,
 				0DAE270C1EE30BAC004EE306 /* Assets.xcassets */,
-				0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */,
 				0DAE27111EE30BAC004EE306 /* Info.plist */,
-				0DAE27251EE3109A004EE306 /* VideoJSONFeed.swift */,
-				0DAE27291EE318A2004EE306 /* Feed.json */,
-				0DE75D871EE32F7F00454E56 /* VideoJSONParser.swift */,
 			);
 			path = VideoBrowser;
 			sourceTree = "<group>";
@@ -101,9 +150,8 @@
 		0DAE27191EE30BAC004EE306 /* VideoBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
+				0D1CC5A71EEDBD3600907386 /* DummyMatchListTableModelCreator.swift */,
 				0DAE271C1EE30BAC004EE306 /* Info.plist */,
-				0DAE27271EE312EA004EE306 /* testVideoJSONFeed.swift */,
-				0DE75D851EE32EFF00454E56 /* testVideoJSONParser.swift */,
 			);
 			path = VideoBrowserTests;
 			sourceTree = "<group>";
@@ -118,6 +166,7 @@
 				0DAE26FE1EE30BAC004EE306 /* Sources */,
 				0DAE26FF1EE30BAC004EE306 /* Frameworks */,
 				0DAE27001EE30BAC004EE306 /* Resources */,
+				0D1CC6291EEF478800907386 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,13 +208,13 @@
 					0DAE27011EE30BAC004EE306 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = EF4UQ57PCN;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					0DAE27151EE30BAC004EE306 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = EF4UQ57PCN;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 0DAE27011EE30BAC004EE306;
 					};
 				};
@@ -195,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAE27101EE30BAC004EE306 /* LaunchScreen.storyboard in Resources */,
-				0DAE272A1EE318A2004EE306 /* Feed.json in Resources */,
+				0D1CC62B1EEF4D8000907386 /* Feed.json in Resources */,
 				0DAE270D1EE30BAC004EE306 /* Assets.xcassets in Resources */,
 				0DAE270B1EE30BAC004EE306 /* Main.storyboard in Resources */,
 			);
@@ -215,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DAE27081EE30BAC004EE306 /* ViewController.swift in Sources */,
-				0DAE27261EE3109A004EE306 /* VideoJSONFeed.swift in Sources */,
-				0DE75D881EE32F7F00454E56 /* VideoJSONParser.swift in Sources */,
+				0D9F2A5C1EEC7D7400776BAE /* VideoItemCell.swift in Sources */,
+				0D1CC5A41EEDBA9B00907386 /* MatchDetailViewModel.swift in Sources */,
+				0D6CCB5E1EE481E90020D145 /* MatchListTableViewController.swift in Sources */,
+				0D1CC5A21EEDB72900907386 /* MatchListTableModel.swift in Sources */,
+				0D9F2A611EED827B00776BAE /* MatchDetailsViewController.swift in Sources */,
 				0DAE27061EE30BAC004EE306 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,8 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE75D861EE32EFF00454E56 /* testVideoJSONParser.swift in Sources */,
-				0DAE27281EE312EA004EE306 /* testVideoJSONFeed.swift in Sources */,
+				0D1CC6321EEF588600907386 /* MatchDetailViewModel.swift in Sources */,
+				0D1CC6311EEF588300907386 /* MatchListTableModel.swift in Sources */,
+				0D1CC62C1EEF57EE00907386 /* DummyMatchListTableModelCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +335,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: James Honeyball (JA47JVZZ6Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Honeyball (JA47JVZZ6Z)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -302,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,11 +388,13 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: James Honeyball (EF4UQ57PCN)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Honeyball (EF4UQ57PCN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -347,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -365,6 +421,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honeyball.VideoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b88acbf3-4d94-406e-a835-9e3fcb6d6547";
+				PROVISIONING_PROFILE_SPECIFIER = "James Honeyball Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -378,6 +436,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honeyball.VideoBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "26800e2c-f361-4d7e-8053-2e072401135d";
+				PROVISIONING_PROFILE_SPECIFIER = "James Honeyball Ad-Hoc Distribution";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -393,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honeyball.VideoBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoBrowser.app/VideoBrowser";
@@ -405,11 +466,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = EF4UQ57PCN;
 				INFOPLIST_FILE = VideoBrowserTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.honeyball.VideoBrowserTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VideoBrowser.app/VideoBrowser";
 			};
