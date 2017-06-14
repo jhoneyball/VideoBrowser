@@ -20,6 +20,8 @@
 		0DAE270B1EE30BAC004EE306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE27091EE30BAC004EE306 /* Main.storyboard */; };
 		0DAE270D1EE30BAC004EE306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270C1EE30BAC004EE306 /* Assets.xcassets */; };
 		0DAE27101EE30BAC004EE306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */; };
+		0DF54D361EF1E43900DCE8B7 /* Feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DF54D351EF1E43900DCE8B7 /* Feed.json */; };
+		0DF54D371EF1E5DC00DCE8B7 /* Feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DF54D351EF1E43900DCE8B7 /* Feed.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 		0DAE27111EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DAE27161EE30BAC004EE306 /* VideoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAE271C1EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DF54D351EF1E43900DCE8B7 /* Feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Feed.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				0D1CC5A71EEDBD3600907386 /* DummyMatchListTableModelCreator.swift */,
+				0DF54D351EF1E43900DCE8B7 /* Feed.json */,
 				0DAE271C1EE30BAC004EE306 /* Info.plist */,
 			);
 			path = VideoBrowserTests;
@@ -239,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DAE27101EE30BAC004EE306 /* LaunchScreen.storyboard in Resources */,
+				0DF54D371EF1E5DC00DCE8B7 /* Feed.json in Resources */,
 				0DAE270D1EE30BAC004EE306 /* Assets.xcassets in Resources */,
 				0DAE270B1EE30BAC004EE306 /* Main.storyboard in Resources */,
 			);
@@ -248,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF54D361EF1E43900DCE8B7 /* Feed.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
