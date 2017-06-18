@@ -26,12 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let matchList = MatchList(from: .file, with: "Feed.json")!
         var matchListTableModel = MatchListTableModel()
-        matchListTableModel.addItems(matchList)
-        
-        
+        matchListTableModel.matchItems = matchList.matchItems
+
+
         matchListTableViewController.matchListTableModel = matchListTableModel
 
-
+        print("Assembled models")
         return true
     }
 
