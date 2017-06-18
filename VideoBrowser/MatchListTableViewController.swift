@@ -38,6 +38,7 @@ class MatchListTableViewController: UITableViewController {
         let matchDetailsViewController = segue.destination as! MatchDetailsViewController
         if let selectedItem = tableView.indexPathForSelectedRow?.item {
             matchDetailsViewController.matchDetailViewModel = MatchDetailViewModel(matchItem: matchListTableModel.matchItems[selectedItem])
+            matchDetailsViewController.matchDetailViewModel.matchItem.delegate = matchDetailsViewController
         }
     }
 }

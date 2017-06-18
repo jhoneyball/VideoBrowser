@@ -8,37 +8,30 @@
 
 import UIKit
 import MatchList
+import Dispatch
 
 class MatchDetailsViewController: UIViewController {
 
     var matchDetailViewModel: MatchDetailViewModel!
     
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var matchSynopsisLabel: UILabel!
     @IBOutlet weak var broadcastChannelLabel: UILabel!
-    @IBOutlet var matchImageView: UIImageView!
+    @IBOutlet weak var matchImageView: UIImageView!
     @IBOutlet weak var navigationTitle: UINavigationItem!
-    var spinner: UIActivityIndicatorView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
-        let height = matchImageView.frame.height / 2.0
-        let width = height
-        let x = matchImageView.frame.width / 2.0
-        let y = matchImageView.frame.height / 2.0
-        spinner.center = matchImageView.center
-        matchImageView.addSubview(spinner)
+        spinner.hidesWhenStopped = true
         spinner.startAnimating()
-
-        matchDetailViewModel.matchItem.delegate = self
         matchSynopsisLabel.text = matchDetailViewModel.matchItem.synopsis
         broadcastChannelLabel.text = matchDetailViewModel.matchItem.broadcastChannel
         navigationTitle.title = matchDetailViewModel.matchItem.title
-        //if matchDetailViewModel.matchItem.image != nil {
-        //    matchImageView.image = matchDetailViewModel.matchItem.image
-        //    spinner.stopAnimating()
-        //}
+        if matchDetailViewModel.matchItem.image != nil {
+            matchImageView.image = matchDetailViewModel.matchItem.image
+            spinner.stopAnimating()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,7 +54,9 @@ class MatchDetailsViewController: UIViewController {
 }
 extension MatchDetailsViewController: MatchItemDelegate {
     func delegateAlertForImage() {
-        // matchImageView.image = matchDetailViewModel.matchItem.image
-        //self.spinner.stopAnimating()
+        DispatchQueue.main.async {
+            self.matchImageView.image = self.matchDetailViewModel.matchItem.image
+            self.spinner.stopAnimating()
+        }        
     }
 }
