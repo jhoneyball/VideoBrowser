@@ -11,6 +11,8 @@ import MatchList
 
 struct MatchListTableModel {
     
-    var matchItems: [MatchItem]!
-
+    var items: [MatchItem]!
+    var count: Int {
+        return items.count
+    }
 }

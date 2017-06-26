@@ -15,6 +15,8 @@ class MatchListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // configure for variable height cells
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.setNeedsLayout()
@@ -22,14 +24,14 @@ class MatchListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return matchListTableModel.matchItems.count
+       return matchListTableModel.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
  
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCellIdentifier", for: indexPath) as! VideoItemCell
-        cell.mainLabel?.text = matchListTableModel.matchItems[indexPath.row].title
-        cell.subLabel?.text = matchListTableModel.matchItems[indexPath.row].synopsis
+        cell.mainLabel?.text = matchListTableModel.items[indexPath.row].title
+        cell.subLabel?.text = matchListTableModel.items[indexPath.row].synopsis
         return cell
     }
 
@@ -37,7 +39,7 @@ class MatchListTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let matchDetailsViewController = segue.destination as! MatchDetailsViewController
         if let selectedItem = tableView.indexPathForSelectedRow?.item {
-            matchDetailsViewController.matchDetailViewModel = MatchDetailViewModel(matchItem: matchListTableModel.matchItems[selectedItem])
+            matchDetailsViewController.matchDetailViewModel = MatchDetailViewModel(matchItem: matchListTableModel.items[selectedItem])
             matchDetailsViewController.matchDetailViewModel.matchItem.delegate = matchDetailsViewController
         }
     }

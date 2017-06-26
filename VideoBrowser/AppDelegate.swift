@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let matchList = MatchList(from: .file, with: "Feed.json")!
         var matchListTableModel = MatchListTableModel()
-        matchListTableModel.matchItems = matchList.matchItems
+        matchListTableModel.items = matchList.matchItems
 
 
         matchListTableViewController.matchListTableModel = matchListTableModel
