@@ -22,7 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = window?.rootViewController as! UINavigationController
         let videoListTableViewController = navigationController.viewControllers[0] as! VideoListTableViewController
 
-        
         let videoList = VideoItemStore(from: .file, with: "Feed.json")!
         var videoListTableModel = VideoListTableModel()
         videoListTableModel.items = videoList.videoItems
@@ -30,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         videoListTableViewController.videoListTableModel = videoListTableModel
 
-        print("Assembled models")
+        print("Assembled modelz")
         return true
     }
 

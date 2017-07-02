@@ -60,7 +60,6 @@
 		0DAE27111EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DAE27161EE30BAC004EE306 /* VideoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAE271C1EE30BAC004EE306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DBC85EF1F0954EB00C65A89 /* VideoBrowser_DomainModels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoBrowser_DomainModels.framework; path = "Frameworks/VideoBrowser_DomainModels/build/Debug-iphoneos/VideoBrowser_DomainModels.framework"; sourceTree = "<group>"; };
 		0DF54D351EF1E43900DCE8B7 /* Feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Feed.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,7 +154,6 @@
 		0DBC85EE1F0954EB00C65A89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0DBC85EF1F0954EB00C65A89 /* VideoBrowser_DomainModels.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
