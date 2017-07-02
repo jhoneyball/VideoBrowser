@@ -8,7 +8,7 @@
       location = "container:"
       name = "Frameworks">
       <FileRef
-         location = "group:Frameworks/VideoBrowser_DataSources/VideoBrowser_DataSources.xcodeproj">
+         location = "group:VideoBrowser_DataSources/VideoBrowser_DataSources.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:Frameworks/VideoBrowser_DomainModels/VideoBrowser_DomainModels.xcodeproj">
