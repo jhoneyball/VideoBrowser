@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MatchList
+import VideoBrowser_DomainModels
 import Dispatch
 
 class MatchDetailsViewController: UIViewController {

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MatchList
+import VideoBrowser_DomainModels
 
 struct MatchDetailViewModel {
     var matchItem: MatchItem
