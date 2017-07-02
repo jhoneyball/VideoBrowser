@@ -4,4 +4,11 @@
    <FileRef
       location = "container:VideoBrowser.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Frameworks">
+      <FileRef
+         location = "group:Frameworks/VideoBrowser_DomainModels/VideoBrowser_DomainModels.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>

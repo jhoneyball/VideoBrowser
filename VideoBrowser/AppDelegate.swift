@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import MatchList
-
+import VideoBrowser_DomainModels
 
 
 @UIApplicationMain
