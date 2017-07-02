@@ -1,0 +1,3 @@
+[submodule "Frameworks/VideoBrowser_DataSources"]
+	path = Frameworks/VideoBrowser_DataSources
+	url = https://github.com/jhoneyball/VideoBrowser_DataSources.git
