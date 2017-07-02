@@ -52,7 +52,7 @@ class MatchDetailsViewController: UIViewController {
     */
 
 }
-extension MatchDetailsViewController: MatchItemDelegate {
+extension MatchDetailsViewController: VideoItemDelegate {
     func delegateAlertForImage() {
         DispatchQueue.main.async {
             self.matchImageView.image = self.matchDetailViewModel.matchItem.image

@@ -11,7 +11,7 @@ import VideoBrowser_DomainModels
 
 struct MatchListTableModel {
     
-    var items: [MatchItem]!
+    var items: [VideoItem]!
     var count: Int {
         return items.count
     }

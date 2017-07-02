@@ -10,9 +10,9 @@ import Foundation
 import VideoBrowser_DomainModels
 
 struct MatchDetailViewModel {
-    var matchItem: MatchItem
+    var matchItem: VideoItem
 
-    init(matchItem: MatchItem) {
+    init(matchItem: VideoItem) {
         self.matchItem = matchItem
     }
 }

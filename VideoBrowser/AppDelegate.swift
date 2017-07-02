@@ -23,9 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let matchListTableViewController = navigationController.viewControllers[0] as! MatchListTableViewController
 
         
-        let matchList = MatchList(from: .file, with: "Feed.json")!
+        let matchList = VideoItemStore(from: .file, with: "Feed.json")!
         var matchListTableModel = MatchListTableModel()
-        matchListTableModel.items = matchList.matchItems
+        matchListTableModel.items = matchList.videoItems
 
 
         matchListTableViewController.matchListTableModel = matchListTableModel
