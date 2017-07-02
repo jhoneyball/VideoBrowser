@@ -10,8 +10,5 @@
       <FileRef
          location = "group:Frameworks/VideoBrowser_DataSources/VideoBrowser_DataSources.xcodeproj">
       </FileRef>
-      <FileRef
-         location = "group:Frameworks/VideoBrowser_DomainModels/VideoBrowser_DomainModels.xcodeproj">
-      </FileRef>
    </Group>
 </Workspace>
