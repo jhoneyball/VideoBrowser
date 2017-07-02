@@ -20,15 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let navigationController = window?.rootViewController as! UINavigationController
-        let matchListTableViewController = navigationController.viewControllers[0] as! MatchListTableViewController
+        let videoListTableViewController = navigationController.viewControllers[0] as! VideoListTableViewController
 
         
-        let matchList = VideoItemStore(from: .file, with: "Feed.json")!
-        var matchListTableModel = MatchListTableModel()
-        matchListTableModel.items = matchList.videoItems
+        let videoList = VideoItemStore(from: .file, with: "Feed.json")!
+        var videoListTableModel = VideoListTableModel()
+        videoListTableModel.items = videoList.videoItems
 
 
-        matchListTableViewController.matchListTableModel = matchListTableModel
+        videoListTableViewController.videoListTableModel = videoListTableModel
 
         print("Assembled models")
         return true

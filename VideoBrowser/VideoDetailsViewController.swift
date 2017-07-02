@@ -10,14 +10,14 @@ import UIKit
 import VideoBrowser_DomainModels
 import Dispatch
 
-class MatchDetailsViewController: UIViewController {
+class VideoDetailsViewController: UIViewController {
 
-    var matchDetailViewModel: MatchDetailViewModel!
+    var videoDetailViewModel: VideoDetailViewModel!
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!
-    @IBOutlet weak var matchSynopsisLabel: UILabel!
+    @IBOutlet weak var videoSynopsisLabel: UILabel!
     @IBOutlet weak var broadcastChannelLabel: UILabel!
-    @IBOutlet weak var matchImageView: UIImageView!
+    @IBOutlet weak var videoImageView: UIImageView!
     @IBOutlet weak var navigationTitle: UINavigationItem!
 
     
@@ -25,11 +25,11 @@ class MatchDetailsViewController: UIViewController {
         super.viewDidLoad()
         spinner.hidesWhenStopped = true
         spinner.startAnimating()
-        matchSynopsisLabel.text = matchDetailViewModel.matchItem.synopsis
-        broadcastChannelLabel.text = matchDetailViewModel.matchItem.broadcastChannel
-        navigationTitle.title = matchDetailViewModel.matchItem.title
-        if matchDetailViewModel.matchItem.image != nil {
-            matchImageView.image = matchDetailViewModel.matchItem.image
+        videoSynopsisLabel.text = videoDetailViewModel.videoItem.synopsis
+        broadcastChannelLabel.text = videoDetailViewModel.videoItem.broadcastChannel
+        navigationTitle.title = videoDetailViewModel.videoItem.title
+        if videoDetailViewModel.videoItem.image != nil {
+            videoImageView.image = videoDetailViewModel.videoItem.image
             spinner.stopAnimating()
         }
     }
@@ -52,10 +52,10 @@ class MatchDetailsViewController: UIViewController {
     */
 
 }
-extension MatchDetailsViewController: VideoItemDelegate {
+extension VideoDetailsViewController: VideoItemDelegate {
     func delegateAlertForImage() {
         DispatchQueue.main.async {
-            self.matchImageView.image = self.matchDetailViewModel.matchItem.image
+            self.videoImageView.image = self.videoDetailViewModel.videoItem.image
             self.spinner.stopAnimating()
         }        
     }

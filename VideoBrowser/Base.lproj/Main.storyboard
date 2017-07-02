@@ -14,7 +14,7 @@
         <!--Premier League Matches-->
         <scene sceneID="whb-og-Kjx">
             <objects>
-                <tableViewController id="2gH-j3-vgS" customClass="MatchListTableViewController" customModule="VideoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="2gH-j3-vgS" customClass="VideoListTableViewController" customModule="VideoBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="djc-pm-NIp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="421" y="376"/>
         </scene>
-        <!--Match Details-->
+        <!--Video Details-->
         <scene sceneID="x4d-gF-hqU">
             <objects>
-                <viewController id="zet-JZ-1kW" customClass="MatchDetailsViewController" customModule="VideoBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zet-JZ-1kW" customClass="VideoDetailsViewController" customModule="VideoBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dV4-W3-jXu"/>
                         <viewControllerLayoutGuide type="bottom" id="qZy-7v-XH4"/>
@@ -124,13 +124,13 @@
                             <constraint firstItem="NNd-uv-UmN" firstAttribute="leading" secondItem="eVy-NO-7Hr" secondAttribute="leadingMargin" id="sld-EZ-hcC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Match Details" id="g8m-GD-zMs"/>
+                    <navigationItem key="navigationItem" title="Video Details" id="g8m-GD-zMs"/>
                     <connections>
                         <outlet property="broadcastChannelLabel" destination="NNd-uv-UmN" id="1wm-ta-B3c"/>
-                        <outlet property="matchImageView" destination="QuK-qq-tNN" id="BBB-1G-nTn"/>
-                        <outlet property="matchSynopsisLabel" destination="2az-A6-0fS" id="uNr-bU-uGt"/>
                         <outlet property="navigationTitle" destination="g8m-GD-zMs" id="DeM-2r-M4o"/>
                         <outlet property="spinner" destination="Az3-BD-Wgr" id="j5X-Y5-osb"/>
+                        <outlet property="videoImageView" destination="QuK-qq-tNN" id="j8M-Ug-S4p"/>
+                        <outlet property="videoSynopsisLabel" destination="2az-A6-0fS" id="alx-uP-z5R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MN-Zt-DSP" userLabel="First Responder" sceneMemberID="firstResponder"/>

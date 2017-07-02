@@ -9,9 +9,9 @@
 
 import UIKit
 
-class MatchListTableViewController: UITableViewController {
+class VideoListTableViewController: UITableViewController {
 
-    var matchListTableModel: MatchListTableModel!
+    var videoListTableModel: VideoListTableModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,23 +24,23 @@ class MatchListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return matchListTableModel.count
+       return videoListTableModel.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
  
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCellIdentifier", for: indexPath) as! VideoItemCell
-        cell.mainLabel?.text = matchListTableModel.items[indexPath.row].title
-        cell.subLabel?.text = matchListTableModel.items[indexPath.row].synopsis
+        cell.mainLabel?.text = videoListTableModel.items[indexPath.row].title
+        cell.subLabel?.text = videoListTableModel.items[indexPath.row].synopsis
         return cell
     }
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let matchDetailsViewController = segue.destination as! MatchDetailsViewController
+        let videoDetailsViewController = segue.destination as! VideoDetailsViewController
         if let selectedItem = tableView.indexPathForSelectedRow?.item {
-            matchDetailsViewController.matchDetailViewModel = MatchDetailViewModel(matchItem: matchListTableModel.items[selectedItem])
-            matchDetailsViewController.matchDetailViewModel.matchItem.delegate = matchDetailsViewController
+            videoDetailsViewController.videoDetailViewModel = VideoDetailViewModel(videoItem: videoListTableModel.items[selectedItem])
+            videoDetailsViewController.videoDetailViewModel.videoItem.delegate = videoDetailsViewController
         }
     }
 }
