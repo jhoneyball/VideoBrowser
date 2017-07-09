@@ -23,8 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let videoListTableViewController = navigationController.viewControllers[0] as! VideoListTableViewController
 
         let videoList = VideoItemStore(from: .file, with: "Feed.json")!
-        var videoListTableModel = VideoListTableModel()
-        videoListTableModel.items = videoList.videoItems
+        let videoListTableModel = VideoListTableModel(videoList.videoItems)
 
 
         videoListTableViewController.videoListTableModel = videoListTableModel
