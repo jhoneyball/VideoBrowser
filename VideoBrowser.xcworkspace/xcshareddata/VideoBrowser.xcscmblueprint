@@ -4,34 +4,20 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "ADBB7B17987249E367ECF87BE20860BF7BBE9805" : 9223372036854775807,
     "E91B09E7C851600531E559465B8821CFCB96E56E" : 9223372036854775807,
-    "04575820D139117E43575822EFE7B894FAB0DCC8" : 9223372036854775807,
-    "E01A2AA8CDBCF8042EFB146B61F125245FFE8E40" : 9223372036854775807,
-    "0A76DB92DDCD6ACD7EE6B76A1AA912A8BBCDC7D5" : 9223372036854775807
+    "ADBB7B17987249E367ECF87BE20860BF7BBE9805" : 9223372036854775807,
+    "E01A2AA8CDBCF8042EFB146B61F125245FFE8E40" : 9223372036854775807
   },
-  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5F40E5D0-FDAD-4FF8-9B91-F4245B4E97C6",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "257176EE-7676-4988-A47B-1B496B57A49D",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "ADBB7B17987249E367ECF87BE20860BF7BBE9805" : "Frameworks\/VideoBrowserDomainModels\/",
     "E91B09E7C851600531E559465B8821CFCB96E56E" : "Frameworks\/VideoBrowserDataSources\/",
-    "04575820D139117E43575822EFE7B894FAB0DCC8" : "VideoBrowser\/Frameworks\/VideoBrowser_DataSources\/",
-    "E01A2AA8CDBCF8042EFB146B61F125245FFE8E40" : "VideoBrowser\/",
-    "0A76DB92DDCD6ACD7EE6B76A1AA912A8BBCDC7D5" : "VideoBrowser\/Frameworks\/VideoBrowser_DomainModels\/"
+    "ADBB7B17987249E367ECF87BE20860BF7BBE9805" : "Frameworks\/VideoBrowserDomainModels\/",
+    "E01A2AA8CDBCF8042EFB146B61F125245FFE8E40" : "VideoBrowser\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "VideoBrowser",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VideoBrowser.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jhoneyball\/VideoBrowser_DataSources.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "04575820D139117E43575822EFE7B894FAB0DCC8"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jhoneyball\/VideoBrowser_DomainModels.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A76DB92DDCD6ACD7EE6B76A1AA912A8BBCDC7D5"
-    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jhoneyball\/VideoBrowserDomainModels.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

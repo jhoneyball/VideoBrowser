@@ -112,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				0DAE27091EE30BAC004EE306 /* Main.storyboard */,
+				0D1CC59E1EEDB3F400907386 /* ViewControllers */,
 				0DAE270E1EE30BAC004EE306 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -141,7 +142,6 @@
 			children = (
 				0D1CC5A01EEDB58900907386 /* View */,
 				0D1CC59F1EEDB57C00907386 /* Model */,
-				0D1CC59E1EEDB3F400907386 /* ViewControllers */,
 				0DAE27051EE30BAC004EE306 /* AppDelegate.swift */,
 				0DAE270C1EE30BAC004EE306 /* Assets.xcassets */,
 				0DAE27111EE30BAC004EE306 /* Info.plist */,
