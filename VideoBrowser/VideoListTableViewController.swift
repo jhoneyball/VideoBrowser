@@ -8,6 +8,7 @@
 
 
 import UIKit
+import VideoBrowserDomainModels
 
 class VideoListTableViewController: UITableViewController {
 

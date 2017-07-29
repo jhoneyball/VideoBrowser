@@ -1,17 +1,18 @@
 
 
 import UIKit
-import VideoBrowser_DomainModels
+import VideoBrowserDomainModels
 
 struct VideoListTableModel {
     
-    var items: [VideoItem]
+    var videoItemsStore: VideoItemStore
+    var items: [VideoItem] {return videoItemsStore.videoItems}
     var count: Int {
         return items.count
     }
     
-    init(_ items: [VideoItem]) {
-        self.items = items
+    init(_ videoItemsStore: VideoItemStore) {
+        self.videoItemsStore = videoItemsStore
     }
     
 }

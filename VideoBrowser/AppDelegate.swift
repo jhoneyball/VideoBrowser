@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import VideoBrowser_DomainModels
-
+import VideoBrowserDomainModels
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,17 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let navigationController = window?.rootViewController as! UINavigationController
-        let videoListTableViewController = navigationController.viewControllers[0] as! VideoListTableViewController
 
         let videoList = VideoItemStore(from: .file, with: "Feed.json")!
-        let videoListTableModel = VideoListTableModel(videoList.videoItems)
+        let videoListTableModel = VideoListTableModel(videoList)
 
-
+        // Pass the Table Model into the initial view controller
+        let navigationController = window?.rootViewController as! UINavigationController
+        let videoListTableViewController = navigationController.viewControllers[0] as! VideoListTableViewController
         videoListTableViewController.videoListTableModel = videoListTableModel
 
-        print("Assembled modelz")
+        print("Assembled models")
         return true
     }
 

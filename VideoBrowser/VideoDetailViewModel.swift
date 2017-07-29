@@ -1,7 +1,7 @@
 
 
 import Foundation
-import VideoBrowser_DomainModels
+import VideoBrowserDomainModels
 
 struct VideoDetailViewModel {
     var videoItem: VideoItem

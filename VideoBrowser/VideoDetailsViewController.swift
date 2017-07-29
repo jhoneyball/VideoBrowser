@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import VideoBrowser_DomainModels
 import Dispatch
+import VideoBrowserDomainModels
 
 class VideoDetailsViewController: UIViewController {
 
@@ -53,10 +53,10 @@ class VideoDetailsViewController: UIViewController {
 
 }
 extension VideoDetailsViewController: VideoItemDelegate {
-    func delegateAlertForImage() {
+    func delegateAlertForImageLoaded() {
         DispatchQueue.main.async {
             self.videoImageView.image = self.videoDetailViewModel.videoItem.image
             self.spinner.stopAnimating()
-        }        
+        }
     }
 }
