@@ -8,6 +8,7 @@
 
 import UIKit
 import VideoBrowserDomainModels
+import VideoBrowserDataSources
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,9 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
-        let videoList = VideoItemStore(from: .file, with: "Feed.json")!
-        let videoListTableModel = VideoListTableModel(videoList)
+        
+        let videoJSONFeed = VideoJSONFeed(fromFile: "Feed", ofType: "json", in: Bundle.main)
+        let videoJOSONParser = VideoJSONParser(from: videoJSONFeed!.theJSONData)
+        let videoList = VideoItemStore(from: videoJOSONParser!.videoDataItems)
+        let videoListTableModel = VideoListTableModel(videoList!)
 
         // Pass the Table Model into the initial view controller
         let navigationController = window?.rootViewController as! UINavigationController

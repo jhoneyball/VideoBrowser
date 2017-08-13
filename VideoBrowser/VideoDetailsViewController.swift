@@ -28,9 +28,8 @@ class VideoDetailsViewController: UIViewController {
         videoSynopsisLabel.text = videoDetailViewModel.videoItem.synopsis
         broadcastChannelLabel.text = videoDetailViewModel.videoItem.broadcastChannel
         navigationTitle.title = videoDetailViewModel.videoItem.title
-        if videoDetailViewModel.videoItem.image == nil {
-            videoDetailViewModel.videoItem.escalateImageLoad()
-        } else {
+        videoDetailViewModel.videoItem.escalateImageLoad()
+        if videoDetailViewModel.videoItem.image != nil {
             videoImageView.image = videoDetailViewModel.videoItem.image
             spinner.stopAnimating()
         }
