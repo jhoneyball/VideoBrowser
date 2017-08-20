@@ -19,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let videoJSONFeed = VideoJSONFeed(fromFile: "Feed", ofType: "json", in: Bundle.main)
-        let videoJOSONParser = VideoJSONParser(from: videoJSONFeed!.theJSONData)
+        let dataFromBundleFile = DataFromBundleFile(fromFile: "Feed", ofType: "json", in: Bundle.main)
+        let videoJOSONParser = VideoJSONParser(from: dataFromBundleFile!.data)
         let videoList = VideoItemStore(from: videoJOSONParser!.videoDataItems)
         let videoListTableModel = VideoListTableModel(videoList!)
 
